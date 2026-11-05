@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Página Personal</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fc;
+    color: #222;
+}
+
+header {
+    background: #101d35;
+    padding: 20px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav h2 {
+    color: #36b8ff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #36b8ff;
+}
+
+.inicio {
+    min-height: 500px;
+    padding: 80px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    background: linear-gradient(135deg, #101d35, #164e80);
+    color: white;
+}
+
+.contenido {
+    max-width: 600px;
+}
+
+.contenido h1 {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+.contenido h1 span {
+    color: #36b8ff;
+}
+
+.contenido p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.avatar {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 6px solid #36b8ff;
+    background: white;
+    color: #164e80;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.boton {
+    display: inline-block;
+    background: #36b8ff;
+    color: #101d35;
+    padding: 13px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.seccion {
+    padding: 65px 10%;
+    text-align: center;
+}
+
+.seccion h2 {
+    font-size: 32px;
+    color: #164e80;
+    margin-bottom: 25px;
+}
+
+.seccion p {
+    line-height: 1.8;
+    max-width: 850px;
+    margin: 10px auto;
+}
+
+.oscuro {
+    background: #101d35;
+    color: white;
+}
+
+.oscuro h2 {
+    color: #36b8ff;
+}
+
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.tarjeta {
+    background: white;
+    color: #222;
+    width: 260px;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #00000015;
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+}
+
+.tarjeta h3 {
+    color: #164e80;
+    margin-bottom: 15px;
+}
+
+.boton:hover {
+    background: white;
+}
+
+footer {
+    background: #081426;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media(max-width: 700px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .inicio {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 55px 7%;
+    }
+
+    .contenido h1 {
+        font-size: 35px;
+    }
+
+    .avatar {
+        width: 170px;
+        height: 170px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+    <h2>MI PERFIL</h2>
+    <div>
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#estudios">Estudios</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contacto">Contacto</a>
+    </div>
+</nav>
+</header>
+
+<section class="inicio" id="inicio">
+    <div class="contenido">
+        <p>¡HOLA! BIENVENIDO A MI PÁGINA PERSONAL</p>
+        <h1>Soy <span>Tu Nombre</span></h1>
+        <h2>Estudiante de Tecnología e Informática</h2>
+        <p>
+            Me apasiona la tecnología, la informática y el
+            desarrollo de soluciones digitales. Mi objetivo
+            es aprender y crecer profesionalmente.
+        </p>
+        <a href="#sobre-mi" class="boton">Conóceme</a>
+    </div>
+
+    <div class="avatar">MI FOTO</div>
+</section>
+
+<section class="seccion" id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>
+        Mi nombre es Tu Nombre. Soy estudiante de Arquitectura
+        de Plataformas y Servicios de Tecnología de Información.
+        Me considero una persona responsable, dedicada,
+        creativa y con muchas ganas de aprender.
+    </p>
+</section>
+
+<section class="seccion oscuro" id="estudios">
+    <h2>Mi formación académica</h2>
+
+    <div class="tarjetas">
+        <div class="tarjeta">
+            <h3>Educación básica</h3>
+            <p>Nombre de mi colegio.</p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>Educación superior</h3>
+            <p>Instituto de Educación Superior.</p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>Mi carrera</h3>
+            <p>Arquitectura de Plataformas y Servicios de Tecnología de Información.</p>
+        </div>
+    </div>
+</section>
+
+<section class="seccion" id="habilidades">
+    <h2>Mis habilidades</h2>
+
+    <div class="tarjetas">
+        <div class="tarjeta">
+            <h3>💻 Informática</h3>
+            <p>Conocimientos básicos de computación.</p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>🌐 Desarrollo web</h3>
+            <p>HTML, CSS y JavaScript.</p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>🤝 Trabajo en equipo</h3>
+            <p>Responsabilidad y colaboración.</p>
+        </div>
+    </div>
+</section>
+
+<section class="seccion oscuro" id="contacto">
+    <h2>Contáctame</h2>
+    <p>Correo: tucorreo@gmail.com</p>
+    <p>Teléfono: Mi número de celular</p>
+    <p>Ubicación: Mi ciudad, Perú</p>
+    <a href="mailto:tucorreo@gmail.com" class="boton">
+        Enviar correo
+    </a>
+</section>
+
+<footer>
+    <p>© <span id="anio"></span> Mi Página Personal</p>
+    <p>Todos los derechos reservados.</p>
+</footer>
+
+<script>
+document.getElementById("anio").textContent =
+    new Date().getFullYear();
+
+console.log("Mi página personal funciona correctamente.");
+</script>
+
+</body>
+</html>
